@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/page-style.css" />
+  </head>
+  <body style="width: 400px">
+    <div class="header">
+      <img id="login-logo-theme" style="width: 200px; height: 50px;" src="./images/logo.svg"/>
+    </div>
+    
+    <div class="bplrText">Get TargetVideo player debug info below.</div>
+    
+    <button class="button bplrSmall" id="bplrPlayerInfo" title="Get player info logged in console.">Player info</button>
+    <button class="button bplrBig" id="playerInfoEmbed" title="Get player info displayed above player.">Player info (embed)</button>
+    <button class="button bplrSmall" id="enableDebug" title="Enable/Disable debug mode.">Enable Debug</button>
+    <button class="button bplrBig" id="clearBplrLocalStorage" title="Clear local storage.">Clear Local Storage</button>
+    
+    <div id="bplrNotice" class="bplrText"></div>
+    
+    <script src="js/popup.js"></script>
+    <script src="js/execute.js"></script>
+  </body>
+</html>

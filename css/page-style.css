@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Questrial&display=swap');
+
+:root{
+    --accent-color: #24b07f;
+    --text-color: #000000;
+}
+
+table.infoTable {
+    border: 2px solid var(--accent-color);
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-family: 'Questrial', sans-serif !important;
+    background-color: #e7e5e4;
+    color: var(--text-color);
+    min-width: 400px;
+}
+
+table.infoTable td {
+    border: 2px solid var(--accent-color);
+    padding: 5px;
+}
+
+table.infoTable a {
+    color: var(--text-color);
+}
+
+table.infoTable a:hover {
+    color: var(--accent-color);
+}
+
+table.infoTable span {
+    background-color: #e1dedd;
+    border: 1px solid #b6b0af;
+    border-radius: 4px;
+    padding: 3px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    float: inline-start;
+    font-weight: normal;
+}

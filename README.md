@@ -1,2 +1,2 @@
 # Brid-TargetVideo_Extension
-Extension for debugging Brid-TargetVideo player.
+An extension to easily debug Brid/TargetVideo players on a specific web page.

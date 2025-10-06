@@ -1,0 +1,33 @@
+{
+  "name": "Brid/TargetVideo Player Debug",
+  "description": "An extension to easily debug Brid/TargetVideo players on a specific web page.",
+  "version": "2.2.2",
+  "manifest_version": 3,
+  "author": "Igor Damic, Nikola Dzamic",
+  "web_accessible_resources": [{
+      "resources": [
+        "js/info.js",
+        "js/playerInfoEmbed.js",
+        "css/page-style.css",
+        "js/enableDebug.js"
+      ],
+      "matches": ["<all_urls>"]
+    }],
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/16x16.png",
+      "32": "/images/32x32.png",
+      "48": "/images/48x48.png",
+      "128": "/images/128x128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/16x16.png",
+    "32": "/images/32x32.png",
+    "48": "/images/48x48.png",
+    "128": "/images/128x128.png"
+  },
+  "homepage_url": "https://target-video.com"
+}
