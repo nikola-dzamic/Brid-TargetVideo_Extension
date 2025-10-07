@@ -1,7 +1,7 @@
 {
   "name": "Brid/TargetVideo Player Debug",
   "description": "An extension to easily debug Brid/TargetVideo players on a specific web page.",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "manifest_version": 3,
   "author": "Igor Damic, Nikola Dzamic",
   "web_accessible_resources": [{

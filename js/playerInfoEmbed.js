@@ -33,7 +33,7 @@ function createTable(playerDivs) {
         
         tr.appendChild(Object.assign(document.createElement('td'), {
             innerText: cell1,
-            width: `${$bp(playerDivs.id).width()/4}`
+            width: `${playerDivs.clientWidth/4}`
         }));
         
         switch (cell1) {
