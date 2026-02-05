@@ -1,3 +1,7 @@
+body {
+  font-family: 'Questrial', sans-serif !important;
+}
+
 .button {
   height: 30px;
   outline: none;
@@ -7,7 +11,7 @@
   border-width: 0;
   text-align: center;
   text-decoration: none;
-  background-color: #24b07f;
+  background-color: var(--accent-color);
   color: white;
   cursor: pointer;
 }
@@ -32,7 +36,7 @@
 .header {
   display: flex;
   justify-content: center;
-  background-color: #24b07f;
+  background-color: var(--accent-color);
   margin-bottom: 20px;
   border-radius: 5px;
 }

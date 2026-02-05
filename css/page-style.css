@@ -20,6 +20,10 @@ table.infoTable td {
     padding: 5px;
 }
 
+table.infoTable tr:hover {
+    background-color: #d8d4d3;
+}
+
 table.infoTable a {
     color: var(--text-color);
 }

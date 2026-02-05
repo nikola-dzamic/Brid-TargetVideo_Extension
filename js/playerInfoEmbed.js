@@ -7,7 +7,7 @@ if (typeof BPLR === "undefined" && typeof Brid === "undefined") {
         if ($bp().config.mode === "widget") {
             playerDivs = document.querySelectorAll('div[class$=-playlist-widget], div[class$=-mid-article-widget], div[class$=-native-widget], div[class$=-simple-widget-wrapper-main]');
         } else {
-            playerDivs = document.querySelectorAll('div[id^=TargetVideo_].bplr, div[id^=Brid_].bplr, div[id^=TargetVideo_].brid, div[id^=Brid_].brid');
+            playerDivs = document.querySelectorAll('div[id^=TargetVideo_].bplr, div[id^=Brid_].bplr, div[id^=TargetVideo_].brid, div[id^=Brid_].brid, div#Brid_Single_Embed.brid, div#BPLR_Single_Embed.bplr');
         }
         
         playerDivs.forEach(playerDivs => {
@@ -133,16 +133,21 @@ function createTable(playerDivs) {
 
 function getJsonUrl (playerDivs) {
     let urlEnv = `${$bp(playerDivs.id).assets.URLconfig.service}/${$bp(playerDivs.id).assets.URLconfig.dynamic}`;
+    let urlConfig = `${$bp(playerDivs.id).config.mode}/${$bp(playerDivs.id).config.id}`;
     
     switch ($bp(playerDivs.id).config.mode) {
         case "video":
-            return `${urlEnv}${$bp(playerDivs.id).config.mode}/${$bp(playerDivs.id).config.id}/${$bp(playerDivs.id).currentSource.id}.json`
+            return `${urlEnv}${urlConfig}/${$bp(playerDivs.id).currentSource.id}.json`
         case "playlist":
-            return `${urlEnv}${$bp(playerDivs.id).config.mode}/${$bp(playerDivs.id).config.id}/${$bp(playerDivs.id).config.playlist}.json`
+            return `${urlEnv}${urlConfig}/${$bp(playerDivs.id).config.Playlist?.id || $bp(playerDivs.id).config.playlist}.json`
         case "latest":
-            return `${urlEnv}${$bp(playerDivs.id).config.mode}/${$bp(playerDivs.id).config.id}/0/1/25/0.json`
+            return `${urlEnv}${urlConfig}/0/1/25/0.json`
         case "widget":
-            return `${urlEnv}${$bp(playerDivs.id).config.mode}/${$bp(playerDivs.id).config.id}/${$bp(playerDivs.id).config.playlist.id}/1/25.json`
+            return `${urlEnv}${urlConfig}/${$bp(playerDivs.id).config.playlist.id}/1/25.json`
+        case "config":
+            return `${urlEnv}video/${$bp(playerDivs.id).config.id}/${$bp(playerDivs.id).currentSource.id}.json`
+        case "matched_videos":
+            return `${$bp(playerDivs.id).assets.URLconfig.service}/fetch_matching_config/${$bp(playerDivs.id).config.id}/${$bp(playerDivs.id).config.partner_id}.json`
         default:
             return "Not able to get JSON url."
     }
