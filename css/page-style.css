@@ -10,7 +10,7 @@ table.infoTable {
     border-spacing: 0;
     border-collapse: collapse;
     font-family: 'Questrial', sans-serif !important;
-    background-color: #e7e5e4;
+    background-color: #e7e5e4 !important;
     color: var(--text-color);
     min-width: 400px;
 }

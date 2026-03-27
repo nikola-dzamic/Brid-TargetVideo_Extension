@@ -7,7 +7,7 @@ if (typeof BPLR === "undefined" && typeof Brid === "undefined") {
         if ($bp().config.mode === "widget") {
             playerDivs = document.querySelectorAll('div[class$=-playlist-widget], div[class$=-mid-article-widget], div[class$=-native-widget], div[class$=-simple-widget-wrapper-main]');
         } else {
-            playerDivs = document.querySelectorAll('div[id^=TargetVideo_].bplr, div[id^=Brid_].bplr, div[id^=TargetVideo_].brid, div[id^=Brid_].brid, div#Brid_Single_Embed.brid, div#BPLR_Single_Embed.bplr');
+            playerDivs = document.querySelectorAll('div[id^=TargetVideo_].bplr, div[id^=Brid_].bplr, div[id^=TargetVideo_].brid, div[id^=Brid_].brid, div[id^=Step-network_].bplr, div[id^=Step-network_].brid, div#BPLR_Single_Embed.bplr, div#Brid_Single_Embed.brid');
         }
         
         playerDivs.forEach(playerDivs => {
