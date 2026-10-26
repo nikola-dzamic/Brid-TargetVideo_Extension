@@ -11,7 +11,7 @@ body {
   border-width: 0;
   text-align: center;
   text-decoration: none;
-  background-color: var(--accent-color);
+  background: var(--gradient-color);
   color: white;
   cursor: pointer;
 }
@@ -36,7 +36,7 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  background-color: var(--accent-color);
+  background: var(--gradient-color);
   margin-bottom: 20px;
   border-radius: 5px;
 }

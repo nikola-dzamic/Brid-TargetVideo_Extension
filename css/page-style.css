@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Questrial&display=swap');
 
 :root{
-    --accent-color: #24b07f;
+    --accent-color: #25C385;
     --text-color: #000000;
+    --gradient-color: linear-gradient(90deg, rgba(17, 152, 141, 1) 0%, rgba(56, 238, 125, 1) 100%);
 }
 
 table.infoTable {
